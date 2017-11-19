@@ -33,7 +33,7 @@ public class MainFragment extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-         rootView = inflater.inflate(R.layout.fragment_main, container, false);
+        rootView = inflater.inflate(R.layout.fragment_main, container, false);
         button1 = rootView.findViewById(R.id.button1);
         button2 = rootView.findViewById(R.id.button2);
         button3 = rootView.findViewById(R.id.button3);
@@ -58,35 +58,35 @@ public class MainFragment extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.button1:
-                String buttonId = editText.getText().toString();
+                String buttonId = editText.getText().toString() + view.getId();
                 Bundle bundle = new Bundle();
                 bundle.putString("string", buttonId);
                 inflateButtonFragment(bundle);
                 break;
 
             case R.id.button2:
-                String buttonId2 = editText.getText().toString();
+                String buttonId2 = editText.getText().toString() + view.getId();
                 Bundle bundle2 = new Bundle();
                 bundle2.putString("string", buttonId2);
                 inflateButtonFragment(bundle2);
                 break;
 
             case R.id.button3:
-                String buttonId3 = editText.getText().toString();
+                String buttonId3 = editText.getText().toString() + view.getId();
                 Bundle bundle3 = new Bundle();
                 bundle3.putString("string", buttonId3);
                 inflateButtonFragment(bundle3);
                 break;
 
             case R.id.button4:
-                String buttonId4 = editText.getText().toString();
+                String buttonId4 = editText.getText().toString() + view.getId();
                 Bundle bundle4 = new Bundle();
                 bundle4.putString("string", buttonId4);
                 inflateButtonFragment(bundle4);
                 break;
 
             case R.id.button5:
-                String buttonId5 = editText.getText().toString();
+                String buttonId5 = editText.getText().toString() + view.getId();
                 Bundle bundle5 = new Bundle();
                 bundle5.putString("string", buttonId5);
                 inflateButtonFragment(bundle5);
